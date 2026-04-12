@@ -5,6 +5,8 @@ export type Category =
   | "Prompt Packs"
   | "Templates"
   | "Tools"
+  | "Skills"
+  | "Notion"
   | "Reading"
   | "Productivity";
 
@@ -80,6 +82,19 @@ export const resources: Resource[] = [
     category: "Tools",
     tier: "free",
     link: "https://cashandcache.substack.com",
+  },
+
+  // ── PAID — AI TOOL EVALUATOR (direct link) ───────────────────────────────
+  {
+    id: "r-evaluator",
+    title: "AI Tool Evaluator",
+    description:
+      "Interactive web app to evaluate and compare AI tools across capability, cost, integration ease, reliability, vendor risk, and AI safety — scored side-by-side so you can make fast, confident decisions.",
+    category: "Tools",
+    tier: "paid",
+    link: "https://product-research-tool-rho.vercel.app/?code=prt-xK9mW4vQ7nBz",
+    downloadLabel: "Open Tool",
+    badge: "Live Tool",
   },
 
   // ── PAID — AI FRAMEWORKS & PRACTITIONER TOOLS ────────────────────────────
@@ -195,14 +210,89 @@ export const resources: Resource[] = [
     category: "Prompt Packs",
     tier: "paid",
     link: "https://cashandcache.substack.com/subscribe",
-    downloadLabel: "Download Deck",
+    downloadLabel: "Download Pack",
     fileType: "MD",
+  },
+
+  // ── PAID — CLAUDE CODE SKILL FILES ───────────────────────────────────────
+  {
+    id: "r17",
+    title: "Financial Analysis Skill",
+    description:
+      "A Claude Code skill that turns any conversation into a structured financial analysis session. Covers personal finance, startup runway, investment research, and AI cost modelling.",
+    category: "Skills",
+    tier: "paid",
+    link: "/downloads/financial-analysis-skill.md",
+    downloadLabel: "Download Skill",
+    fileType: "SKILL",
+    badge: "New",
+  },
+  {
+    id: "r18",
+    title: "AI Tool Evaluator Skill",
+    description:
+      "Claude Code skill that scores any AI tool across 6 dimensions — capability, cost, integration, reliability, vendor risk, and AI safety. Outputs a structured Buy / Trial / Avoid verdict.",
+    category: "Skills",
+    tier: "paid",
+    link: "/downloads/ai-tool-evaluator-skill.md",
+    downloadLabel: "Download Skill",
+    fileType: "SKILL",
+  },
+  {
+    id: "r19",
+    title: "Newsletter Research Skill",
+    description:
+      "Claude Code skill trained on the Cash & Cache editorial voice. Research, structure, and draft full newsletter sections on any AI or finance topic — ready to publish.",
+    category: "Skills",
+    tier: "paid",
+    link: "/downloads/newsletter-research-skill.md",
+    downloadLabel: "Download Skill",
+    fileType: "SKILL",
+  },
+
+  // ── PAID — NOTION TEMPLATES ───────────────────────────────────────────────
+  {
+    id: "r20",
+    title: "AI Project OS (Notion)",
+    description:
+      "Full Notion workspace for managing AI projects: experiment tracker, prompt library, cost log, model comparison database, and weekly review system. Duplicate and build immediately.",
+    category: "Notion",
+    tier: "paid",
+    link: "https://cashandcache.substack.com/subscribe",
+    downloadLabel: "Get Template",
+    fileType: "NOTION",
+    badge: "Popular",
+  },
+  {
+    id: "r21",
+    title: "Personal Finance Dashboard (Notion)",
+    description:
+      "Track net worth, monthly budgets, investment positions, and financial goals in one clean Notion workspace. Pre-built formulas, linked databases, and a monthly review template.",
+    category: "Notion",
+    tier: "paid",
+    link: "https://cashandcache.substack.com/subscribe",
+    downloadLabel: "Get Template",
+    fileType: "NOTION",
+  },
+  {
+    id: "r22",
+    title: "Creator Business HQ (Notion)",
+    description:
+      "All-in-one Notion OS for newsletter creators: content calendar, sponsorship CRM, revenue tracker, subscriber growth log, and idea backlog. Built for Substack and beyond.",
+    category: "Notion",
+    tier: "paid",
+    link: "https://cashandcache.substack.com/subscribe",
+    downloadLabel: "Get Template",
+    fileType: "NOTION",
+    badge: "New",
   },
 ];
 
 export const categories: Category[] = [
   "AI Frameworks",
   "Prompt Packs",
+  "Skills",
+  "Notion",
   "Finance",
   "Templates",
   "Tools",
