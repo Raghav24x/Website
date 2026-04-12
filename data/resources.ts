@@ -5,7 +5,6 @@ export type Category =
   | "Prompt Packs"
   | "Templates"
   | "Tools"
-  | "Skills"
   | "Notion"
   | "Reading"
   | "Productivity";
@@ -214,42 +213,6 @@ export const resources: Resource[] = [
     fileType: "MD",
   },
 
-  // ── PAID — CLAUDE CODE SKILL FILES ───────────────────────────────────────
-  {
-    id: "r17",
-    title: "Financial Analysis Skill",
-    description:
-      "A Claude Code skill that turns any conversation into a structured financial analysis session. Covers personal finance, startup runway, investment research, and AI cost modelling.",
-    category: "Skills",
-    tier: "paid",
-    link: "/downloads/financial-analysis-skill.md",
-    downloadLabel: "Download Skill",
-    fileType: "SKILL",
-    badge: "New",
-  },
-  {
-    id: "r18",
-    title: "AI Tool Evaluator Skill",
-    description:
-      "Claude Code skill that scores any AI tool across 6 dimensions — capability, cost, integration, reliability, vendor risk, and AI safety. Outputs a structured Buy / Trial / Avoid verdict.",
-    category: "Skills",
-    tier: "paid",
-    link: "/downloads/ai-tool-evaluator-skill.md",
-    downloadLabel: "Download Skill",
-    fileType: "SKILL",
-  },
-  {
-    id: "r19",
-    title: "Newsletter Research Skill",
-    description:
-      "Claude Code skill trained on the Cash & Cache editorial voice. Research, structure, and draft full newsletter sections on any AI or finance topic — ready to publish.",
-    category: "Skills",
-    tier: "paid",
-    link: "/downloads/newsletter-research-skill.md",
-    downloadLabel: "Download Skill",
-    fileType: "SKILL",
-  },
-
   // ── PAID — NOTION TEMPLATES ───────────────────────────────────────────────
   {
     id: "r20",
@@ -291,7 +254,6 @@ export const resources: Resource[] = [
 export const categories: Category[] = [
   "AI Frameworks",
   "Prompt Packs",
-  "Skills",
   "Notion",
   "Finance",
   "Templates",
