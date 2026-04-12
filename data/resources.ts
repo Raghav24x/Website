@@ -213,6 +213,20 @@ export const resources: Resource[] = [
     fileType: "MD",
   },
 
+  // ── PAID — FRAMEWORKS ────────────────────────────────────────────────────
+  {
+    id: "r-bmad",
+    title: "BMAD Method Orchestrator",
+    description:
+      "Full orchestrator file for the Breakthrough Method of Agile Development — 4-phase lifecycle (Analysis → Planning → Solutioning → Implementation), 7 specialist AI agents, quality gates, and slash-command workflows. Duplicate into your Notion workspace and run.",
+    category: "Notion",
+    tier: "paid",
+    link: "https://rapid-begonia-4eb.notion.site/Orchestrator-File-for-BMAD-305c43f66c248003aa73ffe0e3a006a4?pvs=143",
+    downloadLabel: "Open in Notion",
+    fileType: "NOTION",
+    badge: "Framework",
+  },
+
   // ── PAID — NOTION TEMPLATES ───────────────────────────────────────────────
   {
     id: "r20",
