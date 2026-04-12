@@ -116,7 +116,7 @@ export const resources: Resource[] = [
       "80+ battle-tested prompts for financial analysis, tax prep, investment research, and AI product ideation — structured for Claude, GPT-4, and Gemini.",
     category: "Prompt Packs",
     tier: "paid",
-    link: "https://cashandcache.substack.com/subscribe",
+    link: "/downloads/prompt-engineering-master-pack.md",
     downloadLabel: "Download Pack",
     fileType: "MD",
     badge: "New",
