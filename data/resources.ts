@@ -213,6 +213,20 @@ export const resources: Resource[] = [
     fileType: "MD",
   },
 
+  // ── PAID — PROMPT TEMPLATES ──────────────────────────────────────────────
+  {
+    id: "r-second-opinion",
+    title: "The Second Opinion System",
+    description:
+      "A 4-prompt decision stress-testing framework: Steelman → Assumption Audit → Stress Test → Commitment Test. Paste into any LLM and run it before any product launch, pricing call, or strategic pivot.",
+    category: "Prompt Packs",
+    tier: "paid",
+    link: "/downloads/prompt-template-second-opinion-system.md",
+    downloadLabel: "Download Template",
+    fileType: "MD",
+    badge: "New",
+  },
+
   // ── PAID — FRAMEWORKS ────────────────────────────────────────────────────
   {
     id: "r-bmad",
