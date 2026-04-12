@@ -1,10 +1,9 @@
-import { Lock, Download, ExternalLink, BookOpen, Sparkles } from "lucide-react";
+import { Lock, Download, ExternalLink, BookOpen } from "lucide-react";
 import { Resource } from "@/data/resources";
 
 const categoryColors: Record<string, string> = {
   "AI Frameworks": "text-[#9B72FF] bg-[rgba(155,114,255,0.15)] border-[rgba(155,114,255,0.3)]",
   "Prompt Packs": "text-[#00D9FF] bg-[rgba(0,217,255,0.1)] border-[rgba(0,217,255,0.25)]",
-  Skills: "text-[#4DD0E1] bg-[rgba(77,208,225,0.12)] border-[rgba(77,208,225,0.3)]",
   Notion: "text-[#FFA726] bg-[rgba(255,167,38,0.12)] border-[rgba(255,167,38,0.3)]",
   Finance: "text-[#4DD0E1] bg-[rgba(77,208,225,0.1)] border-[rgba(77,208,225,0.25)]",
   Templates: "text-[#FFA726] bg-[rgba(255,167,38,0.1)] border-[rgba(255,167,38,0.25)]",
@@ -18,7 +17,6 @@ const fileTypeBg: Record<string, string> = {
   XLSX:  "bg-[rgba(77,208,225,0.2)] text-[#4DD0E1]",
   PDF:   "bg-[rgba(255,140,66,0.2)] text-[#FF8C42]",
   MD:    "bg-[rgba(0,217,255,0.2)] text-[#00D9FF]",
-  SKILL: "bg-[rgba(77,208,225,0.2)] text-[#4DD0E1]",
   NOTION:"bg-[rgba(255,167,38,0.2)] text-[#FFA726]",
 };
 
@@ -29,7 +27,6 @@ const isDirectLink = (link: string) =>
 function CTAIcon({ fileType, label }: { fileType?: string; label?: string }) {
   if (label === "Open Tool") return <ExternalLink className="w-3.5 h-3.5" />;
   if (fileType === "NOTION")  return <BookOpen className="w-3.5 h-3.5" />;
-  if (fileType === "SKILL")   return <Sparkles className="w-3.5 h-3.5" />;
   return <Download className="w-3.5 h-3.5" />;
 }
 
