@@ -112,7 +112,7 @@ export default function LockedCard({ resource }: { resource: Resource }) {
         ) : isPaid ? (
           /* Paid + paywall redirect */
           <a
-            href={resource.link}
+            href="https://cashandcache.substack.com/subscribe?coupon=f12e9091"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 w-full py-2.5 rounded-xl border border-[rgba(155,114,255,0.4)] text-[#9B72FF] text-xs font-semibold hover:bg-[rgba(155,114,255,0.1)] hover:border-[rgba(155,114,255,0.7)] transition-all"

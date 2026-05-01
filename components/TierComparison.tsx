@@ -80,7 +80,7 @@ export default function TierComparison() {
           <div className="absolute -top-12 -right-12 w-40 h-40 rounded-full bg-[#00D9FF] opacity-10 blur-2xl pointer-events-none" />
           <div className="mb-5 relative">
             <div className="flex items-center gap-2">
-              <span className="text-xs font-bold uppercase tracking-widest text-[#FF8C42]">Paid</span>
+              <span className="text-xs font-bold uppercase tracking-widest text-[#FF8C42]">Premium</span>
               <span className="px-2 py-0.5 rounded-full bg-[rgba(255,140,66,0.15)] border border-[rgba(255,140,66,0.35)] text-[#FF8C42] text-[10px] font-bold uppercase tracking-wide">
                 Best Value
               </span>
@@ -105,12 +105,12 @@ export default function TierComparison() {
               Full access to the library, kits, and every tool we build.
             </p>
             <a
-              href="https://cashandcache.substack.com/subscribe"
+              href="https://cashandcache.substack.com/subscribe?coupon=f12e9091"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-4 flex items-center justify-center w-full py-2.5 rounded-xl bg-[#00D9FF] text-[#0A1628] text-sm font-bold hover:bg-[#4DD0E1] transition-colors"
             >
-              Upgrade to Paid
+              Upgrade to Premium
             </a>
           </div>
           <ul className="space-y-2.5 flex-1 relative">
@@ -139,7 +139,7 @@ export default function TierComparison() {
               For those who want to go deeper and support the mission.
             </p>
             <a
-              href="https://cashandcache.substack.com/subscribe"
+              href="https://cashandcache.substack.com/subscribe?coupon=f12e9091"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-4 flex items-center justify-center w-full py-2.5 rounded-xl font-bold text-sm transition-opacity hover:opacity-90"
