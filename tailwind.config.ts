@@ -28,8 +28,10 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ["Inter", "system-ui", "sans-serif"],
-        mono: ["'JetBrains Mono'", "monospace"],
+        sans: ["var(--font-geist)", "Inter", "system-ui", "sans-serif"],
+        mono: ["var(--font-geist-mono)", "'JetBrains Mono'", "monospace"],
+        geist: ["var(--font-geist)", "Inter", "system-ui", "sans-serif"],
+        "geist-mono": ["var(--font-geist-mono)", "'JetBrains Mono'", "monospace"],
       },
       backgroundImage: {
         "navy-gradient": "linear-gradient(135deg, #0A1628 0%, #1A2838 100%)",

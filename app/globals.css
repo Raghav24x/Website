@@ -2,11 +2,106 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap");
 
 :root {
   --background: #0A1628;
   --foreground: #FFF9F5;
+
+  /* ── Brand colors ── */
+  --cc-navy:            #0A1628;
+  --cc-navy-2:          #1A2838;
+  --cc-deep-blue:       #1E3A5F;
+  --cc-cyan:            #00D9FF;
+  --cc-cyan-2:          #4DD0E1;
+  --cc-orange:          #FF8C42;
+  --cc-orange-2:        #FFA726;
+  --cc-purple:          #9B72FF;
+  --cc-purple-2:        #B388FF;
+  --cc-wood:            #D4A574;
+  --cc-wood-2:          #B8956A;
+
+  /* ── Text ── */
+  --cc-offwhite:        #FFF9F5;
+  --cc-text-1:          #FFF9F5;
+  --cc-text-2:          rgba(255,249,245,0.65);
+  --cc-text-3:          rgba(255,249,245,0.40);
+  --cc-text-4:          rgba(255,249,245,0.20);
+
+  /* ── Borders ── */
+  --cc-border-subtle:   rgba(0,217,255,0.07);
+  --cc-border-default:  rgba(0,217,255,0.12);
+  --cc-border-strong:   rgba(0,217,255,0.25);
+  --cc-border-active:   rgba(0,217,255,0.50);
+  --cc-border-white:    rgba(255,255,255,0.07);
+  --cc-border-orange:   rgba(255,140,66,0.40);
+  --cc-border-purple:   rgba(155,114,255,0.25);
+
+  /* ── Card surfaces ── */
+  --cc-card-bg:         rgba(30,58,95,0.25);
+  --cc-card-bg-raised:  rgba(30,58,95,0.40);
+  --cc-card-bg-high:    rgba(30,58,95,0.55);
+  --cc-card-blur:       blur(12px);
+
+  /* ── Semantic colors ── */
+  --cc-color-primary:   var(--cc-cyan);
+  --cc-color-secondary: var(--cc-orange);
+  --cc-color-tertiary:  var(--cc-purple);
+  --cc-color-free:      var(--cc-cyan);
+  --cc-color-paid:      var(--cc-orange);
+  --cc-color-locked:    var(--cc-purple);
+  --cc-color-danger:    #FF5C5C;
+
+  /* ── Shadows / glows ── */
+  --cc-shadow-card:     0 4px 24px rgba(0,0,0,0.4);
+  --cc-glow-cyan:       0 0 24px rgba(0,217,255,0.30);
+  --cc-glow-orange:     0 0 24px rgba(255,140,66,0.25);
+  --cc-glow-purple:     0 0 24px rgba(155,114,255,0.25);
+
+  /* ── Gradients ── */
+  --cc-gradient-bg:          linear-gradient(135deg, #0A1628 0%, #1A2838 100%);
+  --cc-gradient-cta:         linear-gradient(90deg, #9B72FF 0%, #00D9FF 100%);
+  --cc-gradient-text-cash:   linear-gradient(90deg, #00D9FF, #9B72FF);
+  --cc-gradient-text-cache:  linear-gradient(90deg, #FF8C42, #FFA726);
+
+  /* ── Border radius ── */
+  --cc-radius-pill:   9999px;
+  --cc-radius-card:   16px;
+  --cc-radius-btn:    12px;
+  --cc-radius-sm:     8px;
+  --cc-radius-xs:     4px;
+
+  /* ── Spacing ── */
+  --cc-space-1:   4px;  --cc-space-2:   8px;  --cc-space-3:  12px;
+  --cc-space-4:  16px;  --cc-space-5:  20px;  --cc-space-6:  24px;
+  --cc-space-8:  32px;  --cc-space-10: 40px;  --cc-space-12: 48px;
+  --cc-space-16: 64px;  --cc-space-20: 80px;  --cc-space-24: 96px;
+
+  /* ── Typography ── */
+  --cc-font-sans:  var(--font-geist), "Inter", system-ui, sans-serif;
+  --cc-font-mono:  var(--font-geist-mono), "JetBrains Mono", monospace;
+  --cc-font-geist: var(--font-geist), "Inter", system-ui, sans-serif;
+
+  --cc-text-xs:   11px; --cc-text-sm:   13px; --cc-text-base: 16px;
+  --cc-text-lg:   18px; --cc-text-xl:   20px; --cc-text-2xl:  24px;
+  --cc-text-3xl:  30px; --cc-text-4xl:  36px; --cc-text-5xl:  48px;
+  --cc-text-6xl:  60px;
+
+  --cc-weight-light:     300; --cc-weight-normal:    400; --cc-weight-medium:    500;
+  --cc-weight-semibold:  600; --cc-weight-bold:      700; --cc-weight-extrabold: 800;
+  --cc-weight-black:     900;
+
+  --cc-leading-tight:   1.2;  --cc-leading-snug:    1.35;
+  --cc-leading-normal:  1.5;  --cc-leading-relaxed: 1.65;
+
+  --cc-tracking-tight:   -0.02em; --cc-tracking-normal: 0;
+  --cc-tracking-wide:     0.05em; --cc-tracking-widest: 0.12em;
+
+  /* ── Animation ── */
+  --cc-ease-default:    cubic-bezier(0.4, 0, 0.2, 1);
+  --cc-duration-fast:   150ms;
+  --cc-duration-base:   200ms;
+  --cc-duration-slow:   300ms;
 }
 
 * {
@@ -17,7 +112,7 @@ body {
   color: var(--foreground);
   background: linear-gradient(135deg, #0A1628 0%, #1A2838 100%);
   background-attachment: fixed;
-  font-family: "Inter", system-ui, sans-serif;
+  font-family: var(--cc-font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
