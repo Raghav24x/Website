@@ -1,62 +1,73 @@
 export interface Testimonial {
   id: string;
   name: string;
-  handle: string;
-  platform: string;
   quote: string;
-  initials: string;
-  color: string;
 }
 
 export const testimonials: Testimonial[] = [
   {
     id: "t1",
-    name: "Priya Nair",
-    handle: "@priya_builds",
-    platform: "Twitter / X",
-    quote:
-      "Cash & Cache changed how I think about money. The AI prompts template alone saved me hours every tax season. Mandatory read for anyone building on the internet.",
-    initials: "PN",
-    color: "bg-purple-600",
+    name: "AI & No-Code Exits",
+    quote: "Cash & Cache is one of the few AI newsletters that goes beyond hype and actually explains how the technology, economics, and implementation work in the real world. If you care about AI strategy, market shifts, and hands-on workflows.",
   },
   {
     id: "t2",
-    name: "Marcus Webb",
-    handle: "@marcuswebb",
-    platform: "LinkedIn",
-    quote:
-      "The net worth tracker is the best free financial tool I've ever used. The paid version? Absolutely worth it — the automation alone pays for itself.",
-    initials: "MW",
-    color: "bg-blue-600",
+    name: "Artificial Corner",
+    quote: "Cash & Cache goes past the hype and shows you how AI actually works under the hood, from the economics to the implementation. Ashwin and Raghav bring finance and tech expertise, with case studies and workflows you can deploy in your own work.",
   },
   {
     id: "t3",
-    name: "Sofia Chen",
-    handle: "@sofiafinds",
-    platform: "Substack",
-    quote:
-      "I've been reading finance newsletters for years. Cash & Cache hits differently — it's the only one that bridges personal finance and tech in a way that actually makes sense.",
-    initials: "SC",
-    color: "bg-rose-600",
+    name: "Edge of Power",
+    quote: "Where the money meets tech! Awesome!",
   },
   {
     id: "t4",
-    name: "Jordan Okafor",
-    handle: "@jordanbuilds",
-    platform: "Twitter / X",
-    quote:
-      "The debt payoff optimizer helped me visualize paying off $18k in student loans 14 months earlier than I expected. This newsletter is criminally underrated.",
-    initials: "JO",
-    color: "bg-amber-600",
+    name: "The High Converting Edge",
+    quote: "Explore how tech transforms businesses, markets and add value.",
   },
   {
     id: "t5",
-    name: "Leila Rahimi",
-    handle: "@leilarahimi_",
-    platform: "Instagram",
-    quote:
-      "As a first-generation investor, Cash & Cache made the financial world feel approachable. The reading list alone is worth subscribing for.",
-    initials: "LR",
-    color: "bg-teal-600",
+    name: "Leadership in Change",
+    quote: "There are few creators on Substack that are able to talk about AI business and introduce tools and workflows at the level of Ashwin and Raghav. This is a must read.",
+  },
+  {
+    id: "t6",
+    name: "22nd Century Frontier®",
+    quote: "Cash & Cache by Raghav Mehra and Ashwin Francis is a sharp weekly newsletter blending cutting-edge AI breakthroughs with practical implementation strategies for tech leaders and practitioners. Perfect for busy professionals who want frontier insights, real case studies, and deployable workflows — from prompt engineering to enterprise AI — without the hype or fluff.",
+  },
+  {
+    id: "t7",
+    name: "Slow AI",
+    quote: "Cash & Cache is one of the most well-researched and genuinely useful Substacks about AI across the whole platform. Raghav and Ashwin bring technical expertise and lived experience to create work and case studies that actually work. One of the first newsletters I look for.",
+  },
+  {
+    id: "t8",
+    name: "ROBOTS ATE MY HOMEWORK",
+    quote: "Cash & Cache is a weekly gem packed with insights on AI and finance. What I love most is their focus on the backend complexities — how things actually work under the hood. Raghav and Ashwin teach me something new every single week.",
+  },
+  {
+    id: "t9",
+    name: "Wondering About AI",
+    quote: "Raghav and Ashwin offer wildly original takes on AI grounded in their combined expertise in finance and tech. A must read!",
+  },
+  {
+    id: "t10",
+    name: "GenAI Unplugged",
+    quote: "Stay updated with what's happening with AI.",
+  },
+  {
+    id: "t11",
+    name: "Ethics, life and AI",
+    quote: "If you want to learn about AI and finance, this is your blog.",
+  },
+  {
+    id: "t12",
+    name: "Between Roles",
+    quote: "One of the good publications for exploring how AI is transforming businesses, markets, and value.",
+  },
+  {
+    id: "t13",
+    name: "Unstuck to Published",
+    quote: "Cash & Cache is one of my favorite publications on Substack. I learn so much about AI & money every single article Raghav & Ashwin put out. Hands-down one of the best publications on Substack!",
   },
 ];

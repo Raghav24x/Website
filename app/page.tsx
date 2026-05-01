@@ -2,9 +2,8 @@ import Link from "next/link";
 import { ArrowRight, Zap, BookOpen, Wrench, Users } from "lucide-react";
 import HeroLogo from "@/components/HeroLogo";
 import TierComparison from "@/components/TierComparison";
-import TestimonialCard from "@/components/TestimonialCard";
+import TestimonialsCarousel from "@/components/TestimonialsCarousel";
 import LockedCard from "@/components/LockedCard";
-import { testimonials } from "@/data/testimonials";
 import { resources } from "@/data/resources";
 import { fetchSubstackPosts, formatDate } from "@/lib/rss";
 
@@ -69,7 +68,7 @@ export default async function HomePage() {
             {/* Social proof numbers */}
             <div className="flex gap-9 pt-2">
               {[
-                { n: "1,190+", l: "Readers" },
+                { n: "1,200+", l: "Subscribers" },
                 { n: "87",     l: "Posts" },
                 { n: "Weekly", l: "Issues" },
               ].map(({ n, l }) => (
@@ -177,24 +176,14 @@ export default async function HomePage() {
       </section>
 
       {/* ── CREATOR RECOMMENDATIONS ──────────────────────────────── */}
-      <section className="py-20 px-6 overflow-hidden">
-        <div className="mx-auto max-w-6xl">
-          <div className="text-center mb-12">
+      <section className="py-20 overflow-hidden">
+        <div className="mx-auto max-w-6xl px-6 mb-10">
+          <div className="text-center">
             <h2 className="text-3xl font-bold text-[#FFF9F5] mb-3">What creators are saying</h2>
-            <p className="text-[#FFF9F5]/50 text-sm">Recommended by AI practitioners, founders, and financial builders.</p>
+            <p className="text-[#FFF9F5]/50 text-sm">Recommended by Substack creators and AI practitioners.</p>
           </div>
-          <div
-            className="flex gap-5 overflow-x-auto snap-x snap-mandatory pb-4 -mx-6 px-6"
-            style={{ scrollbarWidth: "none" }}
-          >
-            {testimonials.map((t) => (
-              <TestimonialCard key={t.id} t={t} />
-            ))}
-          </div>
-          <p className="text-center text-[#FFF9F5]/20 text-xs mt-6">
-            Placeholder endorsements — replace with real creator quotes when available.
-          </p>
         </div>
+        <TestimonialsCarousel />
       </section>
 
       {/* ── RECENT POSTS ─────────────────────────────────────────── */}
@@ -251,7 +240,7 @@ export default async function HomePage() {
               <div className="text-4xl mb-4">⚡</div>
               <h2 className="text-3xl font-bold text-[#FFF9F5] mb-4">Ready to build smarter?</h2>
               <p className="text-[#FFF9F5]/55 mb-8 text-sm leading-relaxed">
-                Join 1,190+ AI practitioners and tech leaders getting weekly insights, downloadable tools, and frameworks straight to their inbox.
+                Join 1,200+ AI practitioners and tech leaders getting weekly insights, downloadable tools, and frameworks straight to their inbox.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <a

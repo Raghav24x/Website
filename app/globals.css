@@ -157,6 +157,12 @@ body {
   50%       { transform: translateY(-12px); }
 }
 
+/* ── Testimonials infinite scroll ── */
+@keyframes scrollLeft {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
 /* ── Print / PDF styles ── */
 @media print {
   .tweaks-toggle { display: none !important; }
