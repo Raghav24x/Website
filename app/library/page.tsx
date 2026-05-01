@@ -138,7 +138,9 @@ export default function LibraryPage() {
             </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
               {filtered.map((r) => (
-                <LockedCard key={r.id} resource={r} />
+                <a key={r.id} href={`/library/${r.id}`} className="block">
+                  <LockedCard resource={r} />
+                </a>
               ))}
             </div>
           </>

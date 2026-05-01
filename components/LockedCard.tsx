@@ -34,13 +34,6 @@ export default function LockedCard({ resource }: { resource: Resource }) {
           : "border-[rgba(0,217,255,0.15)] bg-[rgba(30,58,95,0.25)] hover:border-[rgba(0,217,255,0.35)]"
       }`}
     >
-      {/* Badge */}
-      {resource.badge && (
-        <div className="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-[#FF8C42]/20 border border-[rgba(255,140,66,0.4)] text-[#FF8C42] text-[10px] font-bold uppercase tracking-wide z-10">
-          {resource.badge}
-        </div>
-      )}
-
       <div className="p-5 flex flex-col gap-3 flex-1">
         {/* Category */}
         <div>
