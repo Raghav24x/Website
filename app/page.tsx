@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ArrowRight, Zap, BookOpen, Wrench, Users } from "lucide-react";
-import HeroIllustration from "@/components/HeroIllustration";
+import HeroLogo from "@/components/HeroLogo";
 import TierComparison from "@/components/TierComparison";
 import TestimonialCard from "@/components/TestimonialCard";
 import LockedCard from "@/components/LockedCard";
@@ -24,33 +24,26 @@ export default async function HomePage() {
           aria-hidden="true"
         />
         {/* Orange spotlight */}
-        <div
-          className="absolute top-1/3 left-1/4 w-96 h-96 rounded-full bg-[#FF8C42] opacity-[0.06] blur-3xl pointer-events-none"
-          aria-hidden="true"
-        />
+        <div className="absolute top-1/3 left-1/4 w-96 h-96 rounded-full bg-[#FF8C42] opacity-[0.06] blur-3xl pointer-events-none" aria-hidden="true" />
         {/* Cyan spotlight */}
-        <div
-          className="absolute top-1/4 right-1/4 w-80 h-80 rounded-full bg-[#00D9FF] opacity-[0.08] blur-3xl pointer-events-none"
-          aria-hidden="true"
-        />
+        <div className="absolute top-1/4 right-1/4 w-80 h-80 rounded-full bg-[#00D9FF] opacity-[0.08] blur-3xl pointer-events-none" aria-hidden="true" />
+        {/* Orange lamp glow – top right */}
+        <div className="absolute -top-16 -right-10 w-[420px] h-[420px] rounded-full pointer-events-none" style={{ background: "radial-gradient(circle, #FFA726 0%, #FF8C42 30%, transparent 70%)", opacity: 0.07, filter: "blur(40px)" }} aria-hidden="true" />
 
         <div className="relative mx-auto max-w-6xl px-6 py-24 grid lg:grid-cols-2 gap-12 items-center">
           {/* Text */}
-          <div className="flex flex-col gap-6">
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-[rgba(0,217,255,0.3)] bg-[rgba(0,217,255,0.07)] w-fit">
+          <div className="flex flex-col gap-5">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[rgba(0,217,255,0.3)] bg-[rgba(0,217,255,0.07)] w-fit">
               <Zap className="w-3.5 h-3.5 text-[#00D9FF]" />
-              <span className="text-[#00D9FF] text-xs font-semibold tracking-wide">Finance × AI for Builders</span>
+              <span className="text-[#00D9FF] text-sm font-bold tracking-wide">AI Implementation for Builders</span>
             </div>
 
-            <h1 className="text-5xl lg:text-6xl font-extrabold leading-tight text-balance">
-              <span className="text-[#FFF9F5]">Where </span>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00D9FF] to-[#9B72FF]">Cash</span>
-              <span className="text-[#FFF9F5]"> meets </span>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF8C42] to-[#FFA726]">Cache</span>
+            <h1 style={{ fontSize: "var(--tweak-title-size, 72px)", fontWeight: 900, lineHeight: 1.0, letterSpacing: "-0.03em", color: "var(--tweak-title-color, #FFFFFF)", whiteSpace: "nowrap" }}>
+              Cash &amp; Cache
             </h1>
 
-            <p className="text-lg text-[#FFF9F5]/65 leading-relaxed max-w-lg">
-              The newsletter for AI practitioners, founders, and tech leaders who want to master the intersection of money and technology. Real tools. Real frameworks. No fluff.
+            <p style={{ fontSize: "var(--tweak-subtitle-size, 26px)", fontWeight: 500, color: "rgba(255,255,255,0.80)", lineHeight: 1.4, maxWidth: 480, letterSpacing: "-0.01em" }}>
+              Where Capital Meets Code
             </p>
 
             <div className="flex flex-wrap gap-3">
@@ -58,36 +51,38 @@ export default async function HomePage() {
                 href="https://cashandcache.substack.com/subscribe"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#00D9FF] text-[#0A1628] font-bold text-sm hover:bg-[#4DD0E1] transition-colors shadow-cyan"
+                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl font-bold text-base hover:opacity-90 transition-opacity shadow-cyan"
+                style={{ background: "var(--tweak-subscribe-bg, #00D9FF)", color: "var(--tweak-subscribe-color, #0A1628)" }}
               >
                 Subscribe — It&apos;s Free
                 <ArrowRight className="w-4 h-4" />
               </a>
               <Link
                 href="/library"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-[rgba(255,140,66,0.4)] text-[#FF8C42] font-semibold text-sm hover:bg-[rgba(255,140,66,0.08)] transition-colors"
+                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl font-semibold text-base hover:opacity-80 transition-opacity"
+                style={{ border: "1px solid var(--tweak-browse-border, rgba(255,140,66,0.4))", color: "var(--tweak-browse-text, #FF8C42)" }}
               >
                 Browse the Library
               </Link>
             </div>
 
             {/* Social proof numbers */}
-            <div className="flex gap-6 pt-2">
+            <div className="flex gap-9 pt-2">
               {[
-                { n: "3,200+", l: "Readers" },
-                { n: "16", l: "Resources" },
+                { n: "1,190+", l: "Readers" },
+                { n: "87",     l: "Posts" },
                 { n: "Weekly", l: "Issues" },
               ].map(({ n, l }) => (
                 <div key={l}>
-                  <div className="text-xl font-bold text-[#FFF9F5]">{n}</div>
-                  <div className="text-xs text-[#FFF9F5]/40">{l}</div>
+                  <div className="text-2xl font-extrabold text-white">{n}</div>
+                  <div className="text-xs text-white/45 uppercase tracking-widest">{l}</div>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Illustration */}
-          <HeroIllustration />
+          {/* Hero logo */}
+          <HeroLogo />
         </div>
       </section>
 
@@ -107,10 +102,10 @@ export default async function HomePage() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {[
-              { icon: <Zap className="w-5 h-5" />, color: "#00D9FF", title: "AI Frameworks", desc: "Downloadable Python kits, agent scaffolds, RAG pipelines, and Cursor rules — ready to use." },
-              { icon: <BookOpen className="w-5 h-5" />, color: "#9B72FF", title: "Prompt Packs", desc: "80+ structured prompts for financial analysis, research, and AI product building." },
-              { icon: <Wrench className="w-5 h-5" />, color: "#FF8C42", title: "Finance Templates", desc: "Net worth trackers, tax prep kits, budget dashboards — all downloadable, all yours." },
-              { icon: <Users className="w-5 h-5" />, color: "#D4A574", title: "Weekly Insights", desc: "Curated breakdowns of AI breakthroughs and financial trends that actually matter to builders." },
+              { icon: <Zap className="w-5 h-5" />,      color: "#00D9FF", title: "AI Frameworks",      desc: "Python kits, agent scaffolds, RAG pipelines, and Cursor rules — ready to use in production." },
+              { icon: <BookOpen className="w-5 h-5" />,  color: "#9B72FF", title: "Prompt Engineering", desc: "80+ structured prompts for financial analysis, research, and AI product building." },
+              { icon: <Wrench className="w-5 h-5" />,    color: "#FF8C42", title: "Strategy Templates", desc: "Implementation playbooks, evaluation scorecards, and decision frameworks for AI leaders." },
+              { icon: <Users className="w-5 h-5" />,     color: "#D4A574", title: "Weekly Insights",    desc: "Curated breakdowns of AI breakthroughs and tech trends that actually matter to builders." },
             ].map(({ icon, color, title, desc }) => (
               <div key={title} className="rounded-2xl border border-[rgba(255,255,255,0.07)] bg-[rgba(30,58,95,0.25)] p-5 backdrop-blur-sm hover:border-[rgba(0,217,255,0.2)] transition-colors">
                 <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-4" style={{ background: `${color}20`, color }}>
@@ -256,7 +251,7 @@ export default async function HomePage() {
               <div className="text-4xl mb-4">⚡</div>
               <h2 className="text-3xl font-bold text-[#FFF9F5] mb-4">Ready to build smarter?</h2>
               <p className="text-[#FFF9F5]/55 mb-8 text-sm leading-relaxed">
-                Join 3,200+ AI practitioners and financial builders getting weekly insights, downloadable tools, and frameworks delivered straight to their inbox.
+                Join 1,190+ AI practitioners and tech leaders getting weekly insights, downloadable tools, and frameworks straight to their inbox.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <a
@@ -273,7 +268,7 @@ export default async function HomePage() {
                   rel="noopener noreferrer"
                   className="px-8 py-3.5 rounded-xl border border-[rgba(155,114,255,0.4)] text-[#9B72FF] font-semibold text-sm hover:bg-[rgba(155,114,255,0.1)] transition-colors"
                 >
-                  Go Paid — $9/mo
+                  Go Paid — $8/mo
                 </a>
               </div>
             </div>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import TweaksPanel from "@/components/TweaksPanel";
 
 const geist = localFont({
   src: "./fonts/GeistVF.woff",
@@ -37,6 +38,7 @@ export default function RootLayout({
     <html lang="en" className={`${geist.variable} ${geistMono.variable}`}>
       <body className="antialiased min-h-screen">
         <Navbar />
+        <TweaksPanel />
         <main className="pt-16">{children}</main>
         {/* Footer */}
         <footer className="border-t border-[rgba(0,217,255,0.1)] mt-24">

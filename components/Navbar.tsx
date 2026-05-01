@@ -10,10 +10,9 @@ export default function Navbar() {
       <div className="mx-auto max-w-6xl px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 group">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#00D9FF] to-[#9B72FF] flex items-center justify-center">
-            <span className="text-[#0A1628] font-bold text-sm">C$</span>
-          </div>
-          <span className="font-bold text-[#FFF9F5] text-lg tracking-tight">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/logo.PNG" alt="Cash & Cache" style={{ width: 36, height: 36, borderRadius: 8, objectFit: "cover" }} />
+          <span className="font-extrabold text-[#FFF9F5] text-lg tracking-tight" style={{ letterSpacing: "-0.02em" }}>
             Cash<span className="text-[#00D9FF]">&</span>Cache
           </span>
         </Link>

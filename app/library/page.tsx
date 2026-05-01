@@ -151,7 +151,7 @@ export default function LibraryPage() {
             <Lock className="w-8 h-8 text-[#9B72FF] mx-auto mb-4" />
             <h3 className="text-xl font-bold text-[#FFF9F5] mb-2">Unlock {paidCount} paid resources</h3>
             <p className="text-[#FFF9F5]/50 text-sm mb-6 max-w-md mx-auto">
-              AI agent kits, prompt packs, financial templates, RAG frameworks, and more — all downloadable, all yours for $9/month.
+              AI agent kits, prompt packs, templates, RAG frameworks, and more — all downloadable, all yours for $8/month.
             </p>
             <a
               href="https://cashandcache.substack.com/subscribe"
@@ -159,7 +159,7 @@ export default function LibraryPage() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-3 rounded-xl bg-gradient-to-r from-[#9B72FF] to-[#00D9FF] text-[#0A1628] font-bold text-sm hover:opacity-90 transition-opacity"
             >
-              Upgrade to Paid — $9/mo
+              Upgrade to Paid — $8/mo
             </a>
           </div>
         )}
