@@ -124,7 +124,7 @@ export default async function HomePage() {
             <div>
               <div className="flex items-center gap-2 mb-2">
                 <div className="w-2 h-2 rounded-full bg-[#9B72FF] animate-glow-pulse" />
-                <span className="text-[#9B72FF] text-xs font-semibold uppercase tracking-widest">Paid Tier Preview</span>
+                <span className="text-[#9B72FF] text-xs font-semibold uppercase tracking-widest">Premium Tier Preview</span>
               </div>
               <h2 className="text-2xl font-bold text-[#FFF9F5]">A taste of what&apos;s behind the curtain</h2>
             </div>
@@ -144,12 +144,12 @@ export default async function HomePage() {
 
           <div className="mt-10 text-center">
             <a
-              href="https://cashandcache.substack.com/subscribe"
+              href="https://cashandcache.substack.com/subscribe?coupon=f12e9091"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-gradient-to-r from-[#9B72FF] to-[#00D9FF] text-[#0A1628] font-bold text-sm hover:opacity-90 transition-opacity shadow-purple"
             >
-              Unlock Everything — Upgrade to Paid
+              Unlock Everything — Upgrade to Premium
               <ArrowRight className="w-4 h-4" />
             </a>
           </div>
@@ -167,7 +167,7 @@ export default async function HomePage() {
       <section className="py-20 px-6">
         <div className="mx-auto max-w-6xl">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-[#FFF9F5] mb-3">Free vs Paid</h2>
+            <h2 className="text-3xl font-bold text-[#FFF9F5] mb-3">Free vs Premium</h2>
             <p className="text-[#FFF9F5]/50 text-sm max-w-md mx-auto">See exactly what you unlock when you go paid.</p>
           </div>
           <TierComparison />
@@ -251,12 +251,12 @@ export default async function HomePage() {
                   Subscribe Free
                 </a>
                 <a
-                  href="https://cashandcache.substack.com/subscribe"
+                  href="https://cashandcache.substack.com/subscribe?coupon=f12e9091"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-8 py-3.5 rounded-xl border border-[rgba(155,114,255,0.4)] text-[#9B72FF] font-semibold text-sm hover:bg-[rgba(155,114,255,0.1)] transition-colors"
                 >
-                  Go Paid — $8/mo
+                  Go Premium — $8/mo
                 </a>
               </div>
             </div>

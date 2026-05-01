@@ -46,7 +46,7 @@ export default function LibraryPage() {
             The Cash &amp; Cache Library
           </h1>
           <p className="text-[#FFF9F5]/55 text-sm max-w-lg leading-relaxed">
-            Templates, AI frameworks, prompt packs, and tools — built for AI practitioners and financial builders. Free resources open immediately. Paid resources require a subscription.
+            Templates, AI frameworks, prompt packs, and tools — built for AI practitioners and financial builders. Free resources open immediately. Premium resources require a subscription.
           </p>
 
           {/* Stats */}
@@ -149,17 +149,17 @@ export default function LibraryPage() {
           <div className="mt-16 rounded-2xl border border-[rgba(155,114,255,0.25)] bg-[rgba(30,58,95,0.35)] p-8 text-center relative overflow-hidden">
             <div className="absolute -top-12 -right-12 w-40 h-40 rounded-full bg-[#9B72FF] opacity-10 blur-2xl pointer-events-none" />
             <Lock className="w-8 h-8 text-[#9B72FF] mx-auto mb-4" />
-            <h3 className="text-xl font-bold text-[#FFF9F5] mb-2">Unlock {paidCount} paid resources</h3>
+            <h3 className="text-xl font-bold text-[#FFF9F5] mb-2">Unlock {paidCount} premium resources</h3>
             <p className="text-[#FFF9F5]/50 text-sm mb-6 max-w-md mx-auto">
               AI agent kits, prompt packs, templates, RAG frameworks, and more — all downloadable, all yours for $8/month.
             </p>
             <a
-              href="https://cashandcache.substack.com/subscribe"
+              href="https://cashandcache.substack.com/subscribe?coupon=f12e9091"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-3 rounded-xl bg-gradient-to-r from-[#9B72FF] to-[#00D9FF] text-[#0A1628] font-bold text-sm hover:opacity-90 transition-opacity"
             >
-              Upgrade to Paid — $8/mo
+              Upgrade to Premium — $8/mo
             </a>
           </div>
         )}
