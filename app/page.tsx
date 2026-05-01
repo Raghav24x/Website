@@ -34,7 +34,7 @@ export default async function HomePage() {
           <div className="flex flex-col gap-5">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[rgba(0,217,255,0.3)] bg-[rgba(0,217,255,0.07)] w-fit">
               <Zap className="w-3.5 h-3.5 text-[#00D9FF]" />
-              <span className="text-[#00D9FF] text-sm font-bold tracking-wide">AI Implementation for Builders</span>
+              <span className="text-[#00D9FF] text-sm font-bold tracking-wide">AI Strategy &amp; Implementation</span>
             </div>
 
             <h1 style={{ fontSize: "var(--tweak-title-size, 72px)", fontWeight: 900, lineHeight: 1.0, letterSpacing: "-0.03em", color: "var(--tweak-title-color, #FFFFFF)", whiteSpace: "nowrap" }}>
@@ -96,12 +96,12 @@ export default async function HomePage() {
         <div className="mx-auto max-w-6xl">
           <div className="text-center mb-14">
             <h2 className="text-3xl font-bold text-[#FFF9F5] mb-3">What you get with Cash &amp; Cache</h2>
-            <p className="text-[#FFF9F5]/50 max-w-lg mx-auto text-sm">Practical resources built for people who build with AI and think about money.</p>
+            <p className="text-[#FFF9F5]/50 max-w-lg mx-auto text-sm">Practical resources built for people who implement AI strategically and want to stay ahead of the curve.</p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {[
               { icon: <Zap className="w-5 h-5" />,      color: "#00D9FF", title: "AI Frameworks",      desc: "Python kits, agent scaffolds, RAG pipelines, and Cursor rules — ready to use in production." },
-              { icon: <BookOpen className="w-5 h-5" />,  color: "#9B72FF", title: "Prompt Engineering", desc: "80+ structured prompts for financial analysis, research, and AI product building." },
+              { icon: <BookOpen className="w-5 h-5" />,  color: "#9B72FF", title: "Prompt Engineering", desc: "Structured prompts for competitive research, decision-making, and AI product building." },
               { icon: <Wrench className="w-5 h-5" />,    color: "#FF8C42", title: "Strategy Templates", desc: "Implementation playbooks, evaluation scorecards, and decision frameworks for AI leaders." },
               { icon: <Users className="w-5 h-5" />,     color: "#D4A574", title: "Weekly Insights",    desc: "Curated breakdowns of AI breakthroughs and tech trends that actually matter to builders." },
             ].map(({ icon, color, title, desc }) => (
@@ -239,7 +239,7 @@ export default async function HomePage() {
               <div className="text-4xl mb-4">⚡</div>
               <h2 className="text-3xl font-bold text-[#FFF9F5] mb-4">Ready to build smarter?</h2>
               <p className="text-[#FFF9F5]/55 mb-8 text-sm leading-relaxed">
-                Join 1,200+ AI practitioners and tech leaders getting weekly insights, downloadable tools, and frameworks straight to their inbox.
+                Join 1,200+ AI practitioners and tech leaders getting weekly AI strategy, implementation guides, and downloadable tools straight to their inbox.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <a

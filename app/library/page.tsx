@@ -46,7 +46,7 @@ export default function LibraryPage() {
             The Cash &amp; Cache Library
           </h1>
           <p className="text-[#FFF9F5]/55 text-sm max-w-lg leading-relaxed">
-            Templates, AI frameworks, prompt packs, and tools — built for AI practitioners and financial builders. Free resources open immediately. Premium resources require a subscription.
+            Templates, AI frameworks, prompt packs, and tools — built for AI practitioners and strategic builders. Free resources open immediately. Premium resources require a subscription.
           </p>
 
           {/* Stats */}

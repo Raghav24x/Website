@@ -18,12 +18,12 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Cash & Cache — Finance × AI for Builders",
+  title: "Cash & Cache — AI Strategy & Implementation",
   description:
-    "A newsletter and resource library for AI practitioners, founders, and tech leaders who want to master the intersection of money and technology.",
+    "A newsletter and resource library for AI practitioners, tech leaders, and builders who want to implement AI strategically — agent workflows, skill files, real-world case studies, and tools that ship.",
   openGraph: {
     title: "Cash & Cache",
-    description: "Finance × AI for Builders",
+    description: "AI Strategy & Implementation for Builders",
     url: "https://cashandcache.substack.com",
     siteName: "Cash & Cache",
     type: "website",
