@@ -69,7 +69,6 @@ export default async function HomePage() {
             <div className="flex gap-9 pt-2">
               {[
                 { n: "1,200+", l: "Subscribers" },
-                { n: "87",     l: "Posts" },
                 { n: "Weekly", l: "Issues" },
               ].map(({ n, l }) => (
                 <div key={l}>

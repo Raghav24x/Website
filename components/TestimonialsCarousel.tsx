@@ -28,9 +28,10 @@ export default function TestimonialsCarousel() {
               &ldquo;{t.quote}&rdquo;
             </p>
 
-            <p className="text-[#FFF9F5] text-sm font-medium not-italic">
-              {t.name}
-            </p>
+            <div>
+              <p className="text-[#FFF9F5] text-sm font-semibold">{t.author}</p>
+              <p className="text-[#FFF9F5]/45 text-xs mt-0.5">{t.newsletter}</p>
+            </div>
           </div>
         ))}
       </div>

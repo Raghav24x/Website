@@ -1,33 +1,19 @@
 "use client";
 import { useState } from "react";
-import { Check, X } from "lucide-react";
+import { Check } from "lucide-react";
 
 const FREE_BENEFITS = [
   "Regular public posts",
-  "Weekly newsletter issues",
-  "Free tools & calculators",
-  "Curated reading lists",
-  "Community access",
 ];
 
 const PAID_BENEFITS = [
-  "Everything in Free",
   "Deeper implementation guides on AI workflows",
   "Ready-to-download templates to improve how you strategize with AI",
-  "Full access to all tools, resource library & community chat threads",
-  "AI Agent Starter Kits (Python)",
-  "Prompt Engineering Packs (80+ prompts)",
-  "RAG Pipeline Frameworks",
-  "Cursor Rules Library for builders",
-  "LLM Evaluation Scorecards",
-  "Priority access to new tools",
+  "Get full access to all our tools, resource library and start community chat threads",
 ];
 
 const FOUNDING_BENEFITS = [
-  "Everything in Paid",
   "Monthly 1:1 AI Workflow Session",
-  "Flexible pricing — pay what you choose above $70/yr",
-  "Founding Member recognition",
 ];
 
 export default function TierComparison() {
@@ -84,12 +70,6 @@ export default function TierComparison() {
               <li key={b} className="flex items-start gap-2.5 text-xs">
                 <Check className="w-3.5 h-3.5 text-[#4DD0E1] flex-shrink-0 mt-0.5" />
                 <span className="text-[#FFF9F5]/75">{b}</span>
-              </li>
-            ))}
-            {PAID_BENEFITS.slice(1).map((b) => (
-              <li key={b} className="flex items-start gap-2.5 text-xs">
-                <X className="w-3.5 h-3.5 text-[#FFF9F5]/18 flex-shrink-0 mt-0.5" />
-                <span className="text-[#FFF9F5]/25 line-through">{b}</span>
               </li>
             ))}
           </ul>

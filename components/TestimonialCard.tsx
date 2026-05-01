@@ -7,7 +7,10 @@ export default function TestimonialCard({ t }: { t: Testimonial }) {
         <path d="M0 18V10.8C0 4.8 3.6 1.2 10.8 0L12 2.4C8.4 3.6 6.6 5.4 6 8.4H10.8V18H0ZM13.2 18V10.8C13.2 4.8 16.8 1.2 24 0L25.2 2.4C21.6 3.6 19.8 5.4 19.2 8.4H24V18H13.2Z" fill="#00D9FF" fillOpacity="0.35" />
       </svg>
       <p className="text-[#FFF9F5]/80 text-sm leading-relaxed flex-1 italic">&ldquo;{t.quote}&rdquo;</p>
-      <p className="text-[#FFF9F5] text-sm font-medium">{t.name}</p>
+      <div>
+        <p className="text-[#FFF9F5] text-sm font-semibold">{t.author}</p>
+        <p className="text-[#FFF9F5]/45 text-xs mt-0.5">{t.newsletter}</p>
+      </div>
     </div>
   );
 }

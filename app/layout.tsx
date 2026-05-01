@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import TweaksPanel from "@/components/TweaksPanel";
 
 const geist = localFont({
   src: "./fonts/GeistVF.woff",
@@ -38,15 +37,13 @@ export default function RootLayout({
     <html lang="en" className={`${geist.variable} ${geistMono.variable}`}>
       <body className="antialiased min-h-screen">
         <Navbar />
-        <TweaksPanel />
         <main className="pt-16">{children}</main>
         {/* Footer */}
         <footer className="border-t border-[rgba(0,217,255,0.1)] mt-24">
           <div className="mx-auto max-w-6xl px-6 py-10 flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-2">
-              <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-[#00D9FF] to-[#9B72FF] flex items-center justify-center">
-                <span className="text-[#0A1628] font-bold text-xs">C$</span>
-              </div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/logo.PNG" alt="Cash & Cache" style={{ width: 28, height: 28, borderRadius: 7, objectFit: "cover" }} />
               <span className="text-[#FFF9F5]/70 text-sm font-medium">Cash & Cache</span>
             </div>
             <p className="text-[#FFF9F5]/30 text-xs">
