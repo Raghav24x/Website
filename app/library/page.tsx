@@ -7,7 +7,7 @@ import { resources, categories, Category, Tier } from "@/data/resources";
 const tierOptions: { label: string; value: "all" | Tier }[] = [
   { label: "All", value: "all" },
   { label: "Free", value: "free" },
-  { label: "Paid", value: "paid" },
+  { label: "Premium", value: "paid" },
 ];
 
 export default function LibraryPage() {
@@ -57,7 +57,7 @@ export default function LibraryPage() {
             </div>
             <div className="flex items-center gap-2">
               <Lock className="w-4 h-4 text-[#9B72FF]" />
-              <span className="text-[#FFF9F5]/60 text-sm"><span className="text-[#FFF9F5] font-semibold">{paidCount}</span> paid</span>
+              <span className="text-[#FFF9F5]/60 text-sm"><span className="text-[#FFF9F5] font-semibold">{paidCount}</span> premium</span>
             </div>
             <div className="text-[#FFF9F5]/60 text-sm">
               <span className="text-[#FFF9F5] font-semibold">{resources.length}</span> total
@@ -149,7 +149,7 @@ export default function LibraryPage() {
           <div className="mt-16 rounded-2xl border border-[rgba(155,114,255,0.25)] bg-[rgba(30,58,95,0.35)] p-8 text-center relative overflow-hidden">
             <div className="absolute -top-12 -right-12 w-40 h-40 rounded-full bg-[#9B72FF] opacity-10 blur-2xl pointer-events-none" />
             <Lock className="w-8 h-8 text-[#9B72FF] mx-auto mb-4" />
-            <h3 className="text-xl font-bold text-[#FFF9F5] mb-2">Unlock {paidCount} premium resources</h3>
+            <h3 className="text-xl font-bold text-[#FFF9F5] mb-2">Unlock premium subscribers&apos; benefits</h3>
             <p className="text-[#FFF9F5]/50 text-sm mb-6 max-w-md mx-auto">
               AI agent kits, prompt packs, templates, RAG frameworks, and more — all downloadable, all yours for $8/month.
             </p>
