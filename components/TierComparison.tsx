@@ -150,12 +150,20 @@ export default function TierComparison() {
             </a>
           </div>
           <ul className="space-y-2.5 flex-1 relative">
-            {FOUNDING_BENEFITS.map((b) => (
+            {PAID_BENEFITS.map((b) => (
               <li key={b} className="flex items-start gap-2.5 text-xs">
                 <Check className="w-3.5 h-3.5 text-[#9B72FF] flex-shrink-0 mt-0.5" />
-                <span className="text-[#FFF9F5]/85">{b}</span>
+                <span className="text-[#FFF9F5]/75">{b}</span>
               </li>
             ))}
+            {/* Spotlight: exclusive founding benefit */}
+            <li className="mt-4 flex items-start gap-3 rounded-xl p-3 border border-[rgba(155,114,255,0.45)] bg-[rgba(155,114,255,0.12)]">
+              <Check className="w-3.5 h-3.5 text-[#B388FF] flex-shrink-0 mt-0.5" />
+              <div>
+                <span className="text-xs font-bold text-[#B388FF] uppercase tracking-wide block mb-0.5">Exclusive</span>
+                <span className="text-xs text-[#FFF9F5]">Monthly 1:1 AI Workflow Session</span>
+              </div>
+            </li>
           </ul>
         </div>
 
