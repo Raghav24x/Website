@@ -13,9 +13,6 @@ const PAID_BENEFITS = [
   "Partnership discounts on premium tiers of our favourite Substack channels",
 ];
 
-const FOUNDING_BENEFITS = [
-  "Monthly 1:1 AI Workflow Session",
-];
 
 export default function TierComparison() {
   const [annual, setAnnual] = useState(false);
