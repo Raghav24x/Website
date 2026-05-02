@@ -10,6 +10,7 @@ const PAID_BENEFITS = [
   "Deeper implementation guides on AI workflows",
   "Ready-to-download templates to improve how you strategize with AI",
   "Get full access to all our tools, resource library and start community chat threads",
+  "Partnership discounts on premium tiers of our favourite Substack channels",
 ];
 
 const FOUNDING_BENEFITS = [

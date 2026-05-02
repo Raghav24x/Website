@@ -10,7 +10,7 @@ import { fetchSubstackPosts, formatDate } from "@/lib/rss";
 
 export const revalidate = 3600;
 
-const LAB_ITEMS = [
+const LIBRARY_ITEMS = [
   { label: "Prompt Evaluation Framework", status: "Building" },
   { label: "Notion OS for AI Teams", status: "Coming Soon" },
   { label: "AI Workflow Audit Kit", status: "Coming Soon" },
@@ -18,20 +18,18 @@ const LAB_ITEMS = [
 
 const AUTHORS = [
   {
-    initials: "RM",
+    photo: "/raghav.jpg",
     name: "Raghav Mehra",
     role: "Strategy & AI Implementation",
     roleColor: "#00D9FF",
-    gradient: "linear-gradient(135deg, #00D9FF, #9B72FF)",
-    bio: "Raghav writes about AI strategy, agent workflows, and how organisations can move from AI curiosity to real-world implementation. He brings a builder's lens to every topic — from evaluating models to shipping production workflows.",
+    bio: "A capital markets fintech professional who shifted into tech consulting and AI product strategy — applying both the financial and strategic lens to how organisations actually implement AI. He writes about how business and product leaders can build effective working relationships with AI without overhauling their core principles. His focus is strategy that executes, not strategy that stays in slide decks.",
   },
   {
-    initials: "AF",
+    photo: "/ashwin.jpg",
     name: "Ashwin Francis",
     role: "Product & Technical Implementation",
     roleColor: "#FF8C42",
-    gradient: "linear-gradient(135deg, #FF8C42, #FFD166)",
-    bio: "Ashwin covers the technical implementation layer — skill files, pipelines, tools, and the real workflows that get AI from prototype to production for non-developers and strategic builders alike.",
+    bio: "A tech and management consultant in financial services who automates the parts of work nobody enjoys — AI skills, background pipelines, and systems that handle the painful stuff so humans can focus on what matters. He writes from daily experience breaking and rebuilding AI workflows, covering what actually works, what fails, and when AI needs a human in the loop. One insight that makes your workflow easier every week — that's the goal.",
   },
 ];
 
@@ -102,9 +100,9 @@ export default async function HomePage() {
       <section className="py-5 px-6 border-y border-[rgba(0,217,255,0.08)] bg-[rgba(10,22,40,0.6)]">
         <div className="mx-auto max-w-6xl">
           <div className="flex flex-wrap items-center gap-x-5 gap-y-2.5">
-            <span className="text-[#00D9FF] text-[11px] font-bold uppercase tracking-widest flex-shrink-0">🔬 In the Lab</span>
+            <span className="text-[#00D9FF] text-[11px] font-bold uppercase tracking-widest flex-shrink-0">📚 In the Library</span>
             <div className="flex flex-wrap gap-2.5">
-              {LAB_ITEMS.map(({ label, status }) => (
+              {LIBRARY_ITEMS.map(({ label, status }) => (
                 <div key={label} className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-[rgba(30,58,95,0.5)] border border-[rgba(255,255,255,0.07)]">
                   <div className={`w-1.5 h-1.5 rounded-full flex-shrink-0 ${status === "Building" ? "bg-[#00D9FF] animate-pulse" : "bg-[#FFF9F5]/20"}`} />
                   <span className="text-[#FFF9F5]/65 text-xs">{label}</span>
@@ -213,12 +211,15 @@ export default async function HomePage() {
             <p className="text-[#FFF9F5]/50 text-sm max-w-md mx-auto">Two practitioners obsessed with making AI work in the real world.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {AUTHORS.map(({ initials, name, role, roleColor, gradient, bio }) => (
+            {AUTHORS.map(({ photo, name, role, roleColor, bio }) => (
               <div key={name} className="rounded-2xl border border-[rgba(0,217,255,0.12)] bg-[rgba(30,58,95,0.3)] p-6 flex flex-col gap-4 backdrop-blur-sm">
                 <div className="flex items-center gap-4">
-                  <div className="w-14 h-14 rounded-2xl flex items-center justify-center text-xl font-extrabold flex-shrink-0" style={{ background: gradient, color: "#0A1628" }}>
-                    {initials}
-                  </div>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={photo}
+                    alt={name}
+                    className="w-16 h-16 rounded-2xl object-cover flex-shrink-0 object-top"
+                  />
                   <div>
                     <p className="font-bold text-[#FFF9F5]">{name}</p>
                     <p className="text-xs font-semibold mt-0.5" style={{ color: roleColor }}>{role}</p>
