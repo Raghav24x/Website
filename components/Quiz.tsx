@@ -251,6 +251,19 @@ export default function Quiz() {
             <RotateCcw className="w-3.5 h-3.5" /> Start over
           </button>
         </div>
+
+        {/* Escape hatch */}
+        <p className="text-[#FFF9F5]/35 text-xs">
+          None of these feel quite right?{" "}
+          <a
+            href="https://substack.com/chat/new?user=325219597-raghav-mehra&utm_source=direct-message-writer"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#9B72FF] hover:text-[#B388FF] transition-colors underline underline-offset-2"
+          >
+            Chat with us directly →
+          </a>
+        </p>
       </div>
     );
   }
