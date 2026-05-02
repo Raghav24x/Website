@@ -71,13 +71,22 @@ export default async function HomePage() {
               <EmailCapture />
             </div>
 
-            <Link
-              href="/library"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-semibold text-sm hover:opacity-80 transition-opacity w-fit"
-              style={{ border: "1px solid rgba(255,140,66,0.4)", color: "#FF8C42" }}
-            >
-              Browse the Library
-            </Link>
+            <div className="flex flex-wrap gap-3">
+              <Link
+                href="/library"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-semibold text-sm hover:opacity-80 transition-opacity"
+                style={{ border: "1px solid rgba(255,140,66,0.4)", color: "#FF8C42" }}
+              >
+                Browse the Library
+              </Link>
+              <Link
+                href="/start"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-semibold text-sm hover:opacity-80 transition-opacity"
+                style={{ border: "1px solid rgba(0,217,255,0.25)", color: "rgba(0,217,255,0.75)" }}
+              >
+                Not sure where to start?
+              </Link>
+            </div>
 
             <div className="flex gap-9 pt-1">
               {[
