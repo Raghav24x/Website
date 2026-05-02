@@ -20,16 +20,16 @@ const AUTHORS = [
   {
     photo: "/raghav.jpg",
     name: "Raghav Mehra",
-    role: "Strategy & AI Implementation",
+    role: "AI Strategy & Consulting",
     roleColor: "#00D9FF",
-    bio: "A capital markets fintech professional who shifted into tech consulting and AI product strategy — applying both the financial and strategic lens to how organisations actually implement AI. He writes about how business and product leaders can build effective working relationships with AI without overhauling their core principles. His focus is strategy that executes, not strategy that stays in slide decks.",
+    bio: "Capital markets fintech professional turned tech consultant. Writes about how business and product leaders can build practical working relationships with AI — without reinventing how they operate.",
   },
   {
     photo: "/ashwin.jpg",
     name: "Ashwin Francis",
-    role: "Product & Technical Implementation",
+    role: "AI Implementation & Automation",
     roleColor: "#FF8C42",
-    bio: "A tech and management consultant in financial services who automates the parts of work nobody enjoys — AI skills, background pipelines, and systems that handle the painful stuff so humans can focus on what matters. He writes from daily experience breaking and rebuilding AI workflows, covering what actually works, what fails, and when AI needs a human in the loop. One insight that makes your workflow easier every week — that's the goal.",
+    bio: "Financial services consultant who automates the parts of work nobody enjoys. Writes about what works, what breaks, and when AI genuinely needs a human in the loop.",
   },
 ];
 
