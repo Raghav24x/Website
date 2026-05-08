@@ -77,7 +77,7 @@ export const resources: Resource[] = [
     id: "r-spec-interviewer",
     title: "PM Spec Interviewer for Claude Code",
     description:
-      "A drop-in Claude Skill (/spec) that runs a product manager–grade interview on your build idea before any code starts. Encodes five PM frameworks — 5 Whys, Jobs-to-be-Done, MoSCoW, User Stories, Given/When/Then — catches the hidden assumptions in your initial prompt, and produces a structured spec with user stories and acceptance criteria ready to push directly to Linear, Jira, or Notion via MCP.",
+      "A drop-in Claude Skill (/spec) that interviews your build idea like a product manager — encodes five PM frameworks, surfaces the hidden assumptions in your prompt, and produces a structured spec with user stories and acceptance criteria ready to push to Linear, Jira, or Notion via MCP.",
     category: "Skill File",
     tier: "paid",
     link: "https://cashandcache.substack.com/p/build-the-right-product-the-first",
