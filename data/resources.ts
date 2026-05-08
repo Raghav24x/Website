@@ -74,6 +74,17 @@ export const resources: Resource[] = [
     badge: "Plugin",
   },
   {
+    id: "r-spec-interviewer",
+    title: "PM Spec Interviewer for Claude Code",
+    description:
+      "A drop-in Claude Skill (/spec) that runs a product manager–grade interview on your build idea before any code starts. Encodes five PM frameworks — 5 Whys, Jobs-to-be-Done, MoSCoW, User Stories, Given/When/Then — catches the hidden assumptions in your initial prompt, and produces a structured spec with user stories and acceptance criteria ready to push directly to Linear, Jira, or Notion via MCP.",
+    category: "Skill File",
+    tier: "paid",
+    link: "https://cashandcache.substack.com/p/build-the-right-product-the-first",
+    downloadLabel: "Get this",
+    badge: "Claude Skill",
+  },
+  {
     id: "r-bmad",
     title: "BMAD Method Orchestrator",
     description:
