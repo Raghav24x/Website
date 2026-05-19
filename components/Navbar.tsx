@@ -40,6 +40,14 @@ export default function Navbar() {
             Library
           </Link>
           <a
+            href="https://cashandcache.substack.com/about"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 rounded-lg text-sm font-medium transition-colors text-[#FFF9F5]/70 hover:text-[#FFF9F5] hover:bg-[rgba(255,255,255,0.05)]"
+          >
+            About Us
+          </a>
+          <a
             href="https://cashandcache.substack.com"
             target="_blank"
             rel="noopener noreferrer"
