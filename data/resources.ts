@@ -85,6 +85,17 @@ export const resources: Resource[] = [
     badge: "Claude Skill",
   },
   {
+    id: "r-notion-research",
+    title: "Notion Research Assistant Skill",
+    description:
+      "A Claude Skill that connects to your Notion database via MCP and reasons over it — mapping content gaps, spotting engagement patterns, and evaluating draft ideas against your own archive. Includes the full Skill file, reference file template, five prompt templates with gotchas, and a debugging guide for the five things that will break.",
+    category: "Skill File",
+    tier: "paid",
+    link: "https://cashandcache.substack.com/p/claude-notion-mcp-research-assistant-build-guide",
+    downloadLabel: "Get this",
+    badge: "Claude Skill",
+  },
+  {
     id: "r-bmad",
     title: "BMAD Method Orchestrator",
     description:
