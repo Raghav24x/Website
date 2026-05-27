@@ -85,6 +85,17 @@ export const resources: Resource[] = [
     badge: "Claude Skill",
   },
   {
+    id: "r-gemini-sales-pipeline",
+    title: "Gemini Sales Research Pipeline",
+    description:
+      "A prospect research pipeline built entirely inside Google's ecosystem — Gemini Deep Research, NotebookLM, and Sheets. Two custom Gem commands produce a scored lead profile and outreach draft in under 20 minutes. Includes the 0-16 scoring rubric, copy-paste Gem instructions, all prompt templates, and a Google Sheet schema.",
+    category: "Templates",
+    tier: "paid",
+    link: "https://cashandcache.substack.com/p/i-used-gemini-to-find-sales-leads",
+    downloadLabel: "Get this",
+    badge: "Gemini Gem",
+  },
+  {
     id: "r-notion-research",
     title: "Notion Research Assistant Skill",
     description:
