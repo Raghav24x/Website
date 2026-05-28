@@ -74,6 +74,17 @@ export const resources: Resource[] = [
     badge: "Plugin",
   },
   {
+    id: "r-prototype-skill",
+    title: "Design-First Prototype Skill for Claude Code",
+    description:
+      "A drop-in Claude Skill (/prototype) for design-first builds — runs a 6-question design interview, generates the Claude Design master prompt, inspects the prototype against a 15-point PM checklist, turns tester feedback into a build/refine/kill verdict, and packages the validated design as a handoff brief for /spec.",
+    category: "Skill File",
+    tier: "paid",
+    link: "https://cashandcache.substack.com/p/the-prototype-tax-how-a-weekend-in",
+    downloadLabel: "Get this",
+    badge: "Claude Skill",
+  },
+  {
     id: "r-spec-interviewer",
     title: "PM Spec Interviewer for Claude Code",
     description:
