@@ -133,6 +133,17 @@ export const resources: Resource[] = [
   // ── FREE ────────────────────────────────────────────────────────────────
 
   {
+    id: "r-visual-brand-system",
+    title: "Build a Visual Brand System with ChatGPT Images",
+    description:
+      "A two-phase visual branding system using ChatGPT Images 2.0 — build one reference image once, then generate covers, infographics, charts, and social carousels with one-line prompts forever. Includes the full Phase 1 setup prompt and per-format one-liners for every asset type you ship.",
+    category: "Guides",
+    tier: "free",
+    link: "https://cashandcache.substack.com/p/how-to-build-a-visual-brand-system",
+    downloadLabel: "Read Guide",
+    badge: "Guide",
+  },
+  {
     id: "r-transferable-prompting",
     title: "Build Transferable AI Prompting Skills",
     description:
