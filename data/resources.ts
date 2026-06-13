@@ -118,6 +118,17 @@ export const resources: Resource[] = [
     badge: "Claude Skill",
   },
   {
+    id: "r-bmad-agent-team",
+    title: "Run a Full AI Product Team with BMAD, Git, and Jira",
+    description:
+      "A PM's guide to directing a 5-agent BMAD team through a real product build — wired into Git and Jira so agents write commits, pull requests, and tickets without you touching either tool. Includes the Code Evaluator Skill for independent QA reviews before any change ships.",
+    category: "Guides",
+    tier: "paid",
+    link: "https://cashandcache.substack.com/p/my-agents-write-and-manage-the-code",
+    downloadLabel: "Get this",
+    badge: "BMAD",
+  },
+  {
     id: "r-bmad",
     title: "BMAD Method Orchestrator",
     description:
