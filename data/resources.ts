@@ -74,6 +74,17 @@ export const resources: Resource[] = [
     badge: "Plugin",
   },
   {
+    id: "r-second-memory",
+    title: "Second Memory: AI Accuracy Skill Builder",
+    description:
+      "A Claude Skill that interviews you about a recurring AI-assisted decision and generates a personalized accuracy skill — applying three layers (constrain, verify, force engagement) calibrated to your specific stakes and tools. Install once; it checks your AI's work automatically on every recurring task.",
+    category: "Skill File",
+    tier: "paid",
+    link: "https://cashandcache.substack.com/p/3-layer-ai-accuracy-framework-claude-chatgpt",
+    downloadLabel: "Get this",
+    badge: "Claude Skill",
+  },
+  {
     id: "r-bmad",
     title: "BMAD Method Orchestrator",
     description:
