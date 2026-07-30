@@ -90,7 +90,7 @@ export default async function HomePage() {
 
             <div className="flex gap-9 pt-1">
               {[
-                { n: "1,500+", l: "Subscribers" },
+                { n: "2,200+", l: "Subscribers" },
                 { n: "Weekly", l: "Issues" },
               ].map(({ n, l }) => (
                 <div key={l}>
@@ -335,7 +335,7 @@ export default async function HomePage() {
               <div className="text-4xl mb-4">⚡</div>
               <h2 className="text-3xl font-bold text-[#FFF9F5] mb-4">Ready to build smarter?</h2>
               <p className="text-[#FFF9F5]/55 mb-8 text-sm leading-relaxed">
-                Join 1,500+ AI practitioners and tech leaders getting weekly AI strategy, implementation guides, and downloadable tools straight to their inbox.
+                Join 2,200+ AI practitioners and tech leaders getting weekly AI strategy, implementation guides, and downloadable tools straight to their inbox.
               </p>
               <div className="max-w-sm mx-auto mb-4">
                 <EmailCapture />
