@@ -118,6 +118,17 @@ export const resources: Resource[] = [
     badge: "Claude Skill",
   },
   {
+    id: "r-skill-scheduler",
+    title: "Skill Health Scheduler for Claude Code",
+    description:
+      "Two drop-in Claude Skills — /eval-suite-wizard and /auto-research — that audit your entire skill stack: build a binary eval suite per skill, then run a self-improving loop until it hits your target pass rate. Catches the silent failures that look fine until you actually test them.",
+    category: "Skill File",
+    tier: "paid",
+    link: "https://cashandcache.substack.com/p/i-almost-gave-a-test-routine-my-gmail",
+    downloadLabel: "Get this",
+    badge: "Claude Skill",
+  },
+  {
     id: "r-second-memory",
     title: "Second Memory: AI Accuracy Skill Builder",
     description:
